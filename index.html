@@ -16,29 +16,22 @@
 
     <title>StudyUp | Pregătire pentru examene</title>
 
-    <!-- CSS-UL ORIGINAL AL SITE-ULUI -->
+    <!-- CSS ORIGINAL -->
     <link
             rel="stylesheet"
             href="assets/style.css"
     >
 
 
-    <!-- =========================================================
-         CSS DOAR PENTRU SECȚIUNEA „ÎNTREABĂ PROFESORUL”
-         RESTUL SITE-ULUI RĂMÂNE NEMODIFICAT
-    ========================================================== -->
-
     <style>
 
-        /* =====================================================
-           SECȚIUNEA PRINCIPALĂ
-        ====================================================== */
+        /* =========================================================
+           ÎNTREABĂ PROFESORUL
+        ========================================================== */
 
         .studyup-ask-teacher {
             position: relative;
-
             padding: 95px 0;
-
             overflow: hidden;
 
             background:
@@ -59,33 +52,7 @@
         }
 
 
-        .studyup-ask-teacher::before {
-            content: "";
-
-            position: absolute;
-
-            width: 400px;
-            height: 400px;
-
-            top: -220px;
-            right: -150px;
-
-            border-radius: 50%;
-
-            background:
-                    rgba(215, 178, 92, 0.11);
-
-            filter: blur(65px);
-
-            pointer-events: none;
-        }
-
-
         .studyup-ask-wrapper {
-            position: relative;
-
-            z-index: 2;
-
             display: grid;
 
             grid-template-columns:
@@ -98,20 +65,13 @@
         }
 
 
-
-        /* =====================================================
-           CARD STÂNGA
-        ====================================================== */
-
         .studyup-ask-intro {
             position: relative;
-
             overflow: hidden;
 
             padding: 42px;
 
             border: 1px solid #e7d8b5;
-
             border-radius: 26px;
 
             background:
@@ -132,38 +92,9 @@
         }
 
 
-        .studyup-ask-intro::after {
-            content: "";
-
-            position: absolute;
-
-            width: 270px;
-            height: 270px;
-
-            left: -135px;
-            bottom: -155px;
-
-            border-radius: 50%;
-
-            background:
-                    rgba(208, 166, 70, 0.10);
-
-            filter: blur(50px);
-
-            pointer-events: none;
-        }
-
-
-
-        /* =====================================================
-           LABEL
-        ====================================================== */
-
         .studyup-ask-label {
             display: inline-flex;
-
             align-items: center;
-
             gap: 9px;
 
             margin-bottom: 18px;
@@ -171,11 +102,9 @@
             color: #ad812d;
 
             font-size: 12px;
-
             font-weight: 800;
 
             letter-spacing: 1.2px;
-
             text-transform: uppercase;
         }
 
@@ -195,22 +124,12 @@
         }
 
 
-
-        /* =====================================================
-           TITLU
-        ====================================================== */
-
         .studyup-ask-intro h2 {
             margin: 0;
 
             color: #241b0f;
 
-            font-size:
-                    clamp(
-                            38px,
-                            4vw,
-                            57px
-                    );
+            font-size: clamp(38px, 4vw, 57px);
 
             line-height: 1.04;
 
@@ -224,24 +143,18 @@
             background:
                     linear-gradient(
                             90deg,
-                            #a77820 0%,
-                            #c99d46 42%,
-                            #e5c875 70%,
-                            #b7892d 100%
+                            #9d711e,
+                            #c99d46,
+                            #e2c16e,
+                            #ad7d27
                     );
 
             -webkit-background-clip: text;
-
             background-clip: text;
 
             color: transparent;
         }
 
-
-
-        /* =====================================================
-           TEXT INTRODUCTIV
-        ====================================================== */
 
         .studyup-ask-intro > p {
             max-width: 560px;
@@ -256,11 +169,6 @@
         }
 
 
-
-        /* =====================================================
-           „NU ÎNȚELEG”
-        ====================================================== */
-
         .studyup-dont-understand {
             position: relative;
 
@@ -273,7 +181,6 @@
                     65px;
 
             border: 1px solid #e5d3a8;
-
             border-radius: 18px;
 
             background:
@@ -286,14 +193,8 @@
             color: #2b2113;
 
             font-size: 22px;
-
             font-weight: 700;
-
             font-style: italic;
-
-            box-shadow:
-                    inset 0 1px 0
-                    rgba(255, 255, 255, 0.75);
         }
 
 
@@ -307,9 +208,7 @@
 
             color: #c79a43;
 
-            font-family:
-                    Georgia,
-                    serif;
+            font-family: Georgia, serif;
 
             font-size: 60px;
 
@@ -317,14 +216,8 @@
         }
 
 
-
-        /* =====================================================
-           BENEFICII
-        ====================================================== */
-
         .studyup-ask-benefits {
             display: flex;
-
             flex-direction: column;
 
             gap: 13px;
@@ -335,7 +228,6 @@
 
         .studyup-ask-benefit {
             display: flex;
-
             align-items: center;
 
             gap: 11px;
@@ -350,7 +242,6 @@
             display: flex;
 
             justify-content: center;
-
             align-items: center;
 
             width: 27px;
@@ -372,17 +263,8 @@
             color: #a87922;
 
             font-weight: 900;
-
-            box-shadow:
-                    0 4px 10px
-                    rgba(174, 129, 40, 0.08);
         }
 
-
-
-        /* =====================================================
-           CARD DREAPTA
-        ====================================================== */
 
         .studyup-question-card {
             position: relative;
@@ -390,7 +272,6 @@
             padding: 35px;
 
             border: 1px solid #e7d9b8;
-
             border-radius: 26px;
 
             background:
@@ -417,8 +298,6 @@
 
             height: 2px;
 
-            border-radius: 0 0 20px 20px;
-
             background:
                     linear-gradient(
                             90deg,
@@ -431,16 +310,10 @@
         }
 
 
-
-        /* =====================================================
-           HEADER CARD
-        ====================================================== */
-
         .studyup-question-top {
             display: flex;
 
             justify-content: space-between;
-
             align-items: center;
 
             gap: 20px;
@@ -451,7 +324,6 @@
 
         .studyup-question-status {
             display: flex;
-
             align-items: center;
 
             gap: 9px;
@@ -459,7 +331,6 @@
             color: #695f4f;
 
             font-size: 12px;
-
             font-weight: 700;
         }
 
@@ -481,12 +352,9 @@
 
 
         .studyup-question-limit {
-            padding:
-                    6px
-                    11px;
+            padding: 6px 11px;
 
             border: 1px solid #e3cf9b;
-
             border-radius: 999px;
 
             background:
@@ -499,15 +367,9 @@
             color: #9b7227;
 
             font-size: 11px;
-
             font-weight: 800;
         }
 
-
-
-        /* =====================================================
-           TITLU CARD
-        ====================================================== */
 
         .studyup-question-card h3 {
             margin: 0 0 8px;
@@ -531,14 +393,8 @@
         }
 
 
-
-        /* =====================================================
-           FORMULAR
-        ====================================================== */
-
         .studyup-question-form {
             display: flex;
-
             flex-direction: column;
 
             gap: 9px;
@@ -551,7 +407,6 @@
             color: #443a2b;
 
             font-size: 12px;
-
             font-weight: 700;
         }
 
@@ -564,7 +419,6 @@
             outline: none;
 
             border: 1px solid #e2d8c3;
-
             border-radius: 13px;
 
             background: #f5f1e9;
@@ -572,8 +426,9 @@
             color: #292116;
 
             font-family: inherit;
-
             font-size: 14px;
+
+            box-sizing: border-box;
 
             transition:
                     border-color 0.2s ease,
@@ -617,49 +472,22 @@
         .studyup-question-form input::placeholder,
         .studyup-question-form textarea::placeholder {
             color: #928875;
-
-            opacity: 1;
         }
 
-
-        .studyup-question-form select {
-            cursor: pointer;
-        }
-
-
-        .studyup-question-form select option {
-            background: #ffffff;
-
-            color: #292116;
-        }
-
-
-
-        /* =====================================================
-           PARTEA DE JOS A FORMULARULUI
-        ====================================================== */
 
         .studyup-question-bottom {
             display: flex;
 
             justify-content: space-between;
-
             align-items: center;
 
             gap: 20px;
-
-            margin-top: 2px;
 
             color: #887d69;
 
             font-size: 11px;
         }
 
-
-
-        /* =====================================================
-           ATAȘAMENT
-        ====================================================== */
 
         .studyup-question-attachment {
             margin-top: 10px;
@@ -673,35 +501,19 @@
 
             gap: 8px;
 
-            padding:
-                    10px
-                    13px;
+            padding: 10px 13px;
 
             border: 1px solid #e2d4b6;
-
             border-radius: 11px;
 
-            background:
-                    #fbf7ee;
+            background: #fbf7ee;
 
             color: #655846;
 
             font-size: 12px;
-
             font-weight: 700;
 
             cursor: pointer;
-
-            transition: 0.2s ease;
-        }
-
-
-        .studyup-upload-button:hover {
-            background: #f4ead2;
-
-            border-color: #d4b669;
-
-            color: #392c19;
         }
 
 
@@ -721,20 +533,10 @@
         }
 
 
-
-        /* =====================================================
-           BUTON TRIMITERE
-        ====================================================== */
-
         .studyup-question-submit {
-            position: relative;
-
-            overflow: hidden;
-
             display: flex;
 
             align-items: center;
-
             justify-content: space-between;
 
             width: 100%;
@@ -743,21 +545,18 @@
 
             margin-top: 13px;
 
-            padding:
-                    0
-                    19px;
+            padding: 0 19px;
 
             border: 1px solid #c3973c;
-
             border-radius: 14px;
 
             background:
                     linear-gradient(
                             135deg,
-                            #a97b25 0%,
-                            #c99c46 35%,
-                            #e5c574 67%,
-                            #b7872e 100%
+                            #a97b25,
+                            #c99c46,
+                            #e5c574,
+                            #b7872e
                     );
 
             color: #21180b;
@@ -765,7 +564,6 @@
             font-family: inherit;
 
             font-size: 14px;
-
             font-weight: 900;
 
             cursor: pointer;
@@ -773,83 +571,8 @@
             box-shadow:
                     0 16px 36px
                     rgba(173, 126, 37, 0.22);
-
-            transition:
-                    transform 0.2s ease,
-                    box-shadow 0.2s ease;
         }
 
-
-        .studyup-question-submit::before {
-            content: "";
-
-            position: absolute;
-
-            width: 80px;
-            height: 160%;
-
-            top: -30%;
-
-            left: -120px;
-
-            transform: rotate(20deg);
-
-            background:
-                    linear-gradient(
-                            90deg,
-                            transparent,
-                            rgba(255, 255, 255, 0.38),
-                            transparent
-                    );
-
-            transition:
-                    left
-                    0.55s ease;
-        }
-
-
-        .studyup-question-submit:hover {
-            transform:
-                    translateY(-2px);
-
-            box-shadow:
-                    0 20px 46px
-                    rgba(173, 126, 37, 0.30);
-        }
-
-
-        .studyup-question-submit:hover::before {
-            left: calc(100% + 40px);
-        }
-
-
-        .studyup-question-submit > span {
-            position: relative;
-
-            z-index: 2;
-        }
-
-
-        .studyup-question-submit-arrow {
-            font-size: 19px;
-
-            transition:
-                    transform
-                    0.2s ease;
-        }
-
-
-        .studyup-question-submit:hover
-        .studyup-question-submit-arrow {
-            transform:
-                    translateX(4px);
-        }
-
-
-
-        /* =====================================================
-           MESAJ VALIDARE
-        ====================================================== */
 
         .studyup-question-message {
             min-height: 19px;
@@ -857,7 +580,6 @@
             margin-top: 5px;
 
             font-size: 12px;
-
             font-weight: 700;
         }
 
@@ -872,11 +594,6 @@
         }
 
 
-
-        /* =====================================================
-           NOTĂ
-        ====================================================== */
-
         .studyup-question-note {
             display: flex;
 
@@ -886,8 +603,7 @@
 
             padding-top: 17px;
 
-            border-top:
-                    1px solid #ece1ca;
+            border-top: 1px solid #ece1ca;
 
             color: #766b59;
 
@@ -897,20 +613,897 @@
         }
 
 
-        .studyup-question-note strong {
-            color: #453927;
+
+        /* =========================================================
+           VERIFICĂ-ȚI CUNOȘTINȚELE
+        ========================================================== */
+
+        .kc-section {
+            position: relative;
+
+            padding: 100px 0;
+
+            background:
+                    radial-gradient(
+                            circle at 8% 5%,
+                            rgba(201, 156, 70, 0.14),
+                            transparent 30%
+                    ),
+                    radial-gradient(
+                            circle at 92% 90%,
+                            rgba(232, 203, 135, 0.16),
+                            transparent 32%
+                    ),
+                    #fffefa;
+
+            border-bottom: 1px solid #eee3cb;
+        }
+
+
+        .kc-section * {
+            box-sizing: border-box;
+        }
+
+
+        .kc-head {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: flex-end;
+
+            gap: 40px;
+
+            margin-bottom: 42px;
+        }
+
+
+        .kc-head-left {
+            max-width: 730px;
+        }
+
+
+        .kc-kicker {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            margin-bottom: 14px;
+
+            color: #a97b25;
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .kc-kicker::before {
+            content: "";
+
+            width: 23px;
+            height: 1px;
+
+            background:
+                    linear-gradient(
+                            90deg,
+                            #a97b25,
+                            #e4c574
+                    );
+        }
+
+
+        .kc-title {
+            margin: 0;
+
+            color: #241b0f;
+
+            font-size: clamp(38px, 5vw, 62px);
+
+            line-height: 1.02;
+
+            letter-spacing: -2.5px;
+        }
+
+
+        .kc-title span {
+            background:
+                    linear-gradient(
+                            90deg,
+                            #9f711d,
+                            #c99c46,
+                            #dfbf6c
+                    );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            color: transparent;
+        }
+
+
+        .kc-head p {
+            max-width: 610px;
+
+            margin: 19px 0 0;
+
+            color: #655b4d;
+
+            font-size: 16px;
+
+            line-height: 1.75;
+        }
+
+
+        .kc-head-info {
+            min-width: 210px;
+
+            padding: 17px 19px;
+
+            border: 1px solid #e6d8b7;
+
+            border-radius: 17px;
+
+            background:
+                    linear-gradient(
+                            145deg,
+                            #fffefa,
+                            #f8f2e4
+                    );
+        }
+
+
+        .kc-head-info small {
+            display: block;
+
+            color: #8e806a;
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .kc-head-info strong {
+            display: block;
+
+            margin-top: 5px;
+
+            color: #332617;
+
+            font-size: 19px;
+        }
+
+
+        .kc-class-tabs {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+            margin-bottom: 28px;
+
+            padding: 7px;
+
+            width: fit-content;
+
+            border: 1px solid #e7d9b9;
+
+            border-radius: 16px;
+
+            background: #fffefa;
+        }
+
+
+        .kc-class-tab {
+            min-width: 105px;
+
+            height: 44px;
+
+            padding: 0 17px;
+
+            border: 0;
+
+            border-radius: 11px;
+
+            background: transparent;
+
+            color: #796b57;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+
+        .kc-class-tab.active {
+            background:
+                    linear-gradient(
+                            135deg,
+                            #a87924,
+                            #d0a753,
+                            #e4c777
+                    );
+
+            color: #23190c;
+        }
+
+
+        .kc-class-header {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+
+            margin-bottom: 19px;
+        }
+
+
+        .kc-class-header h3 {
+            margin: 0;
+
+            color: #2a2014;
+
+            font-size: 24px;
+        }
+
+
+        .kc-class-header span {
+            padding: 6px 11px;
+
+            border: 1px solid #e2d0a5;
+            border-radius: 999px;
+
+            background: #faf3e2;
+
+            color: #9a7127;
+
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+
+        .kc-chapters {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 18px;
+        }
+
+
+        .kc-chapter-card {
+            padding: 26px;
+
+            border: 1px solid #e7d9b9;
+            border-radius: 21px;
+
+            background:
+                    linear-gradient(
+                            145deg,
+                            #fffefa,
+                            #faf6ec
+                    );
+
+            transition: 0.2s ease;
+        }
+
+
+        .kc-chapter-card:hover {
+            transform: translateY(-3px);
+
+            border-color: #d7b86e;
+        }
+
+
+        .kc-card-top {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .kc-chapter-number {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 43px;
+            height: 43px;
+
+            border: 1px solid #dfca95;
+            border-radius: 13px;
+
+            background: #f8eed5;
+
+            color: #a57925;
+
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+
+        .kc-best {
+            text-align: right;
+        }
+
+
+        .kc-best small {
+            display: block;
+
+            color: #948774;
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+        }
+
+
+        .kc-best strong {
+            color: #3c3020;
+
+            font-size: 15px;
+        }
+
+
+        .kc-chapter-card h4 {
+            margin: 0 0 9px;
+
+            color: #291f13;
+
+            font-size: 21px;
+        }
+
+
+        .kc-chapter-card p {
+            min-height: 48px;
+
+            margin-bottom: 20px;
+
+            color: #736957;
+
+            font-size: 13px;
+
+            line-height: 1.65;
+        }
+
+
+        .kc-card-meta {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+            margin-bottom: 21px;
+        }
+
+
+        .kc-meta-pill {
+            padding: 6px 9px;
+
+            border: 1px solid #e8ddc4;
+            border-radius: 999px;
+
+            background: #fcf8ee;
+
+            color: #887b66;
+
+            font-size: 10px;
+        }
+
+
+        .kc-start {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100%;
+
+            min-height: 49px;
+
+            padding: 0 17px;
+
+            border: 1px solid #c7973e;
+            border-radius: 13px;
+
+            background:
+                    linear-gradient(
+                            135deg,
+                            #a77824,
+                            #c99d48,
+                            #e0bf6c
+                    );
+
+            color: #241a0c;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            font-size: 13px;
+            font-weight: 900;
+        }
+
+
+        .kc-quiz-screen {
+            display: none;
+
+            margin-top: 30px;
+
+            padding: 32px;
+
+            border: 1px solid #e2d2ae;
+            border-radius: 24px;
+
+            background:
+                    linear-gradient(
+                            145deg,
+                            #fffefa,
+                            #faf6ec
+                    );
+        }
+
+
+        .kc-quiz-screen.active {
+            display: block;
+        }
+
+
+        .kc-quiz-top {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 25px;
+
+            margin-bottom: 28px;
+
+            padding-bottom: 22px;
+
+            border-bottom: 1px solid #eadfc8;
+        }
+
+
+        .kc-quiz-top small {
+            color: #a07832;
+
+            font-size: 11px;
+            font-weight: 800;
+
+            text-transform: uppercase;
+        }
+
+
+        .kc-quiz-top h3 {
+            margin: 6px 0 0;
+
+            color: #281e12;
+
+            font-size: 27px;
+        }
+
+
+        .kc-close {
+            width: 39px;
+            height: 39px;
+
+            border: 1px solid #dfd2b7;
+            border-radius: 11px;
+
+            background: #f8f3e8;
+
+            cursor: pointer;
+
+            font-size: 18px;
+        }
+
+
+        .kc-question {
+            margin-bottom: 20px;
+
+            padding: 22px;
+
+            border: 1px solid #e8dcc2;
+            border-radius: 17px;
+
+            background: #fffdf8;
+        }
+
+
+        .kc-question-title {
+            display: flex;
+
+            gap: 12px;
+
+            margin-bottom: 17px;
+
+            color: #302517;
+
+            font-size: 15px;
+            font-weight: 750;
+
+            line-height: 1.6;
+        }
+
+
+        .kc-question-number {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            min-width: 29px;
+            height: 29px;
+
+            border-radius: 9px;
+
+            background: #f4e6c3;
+
+            color: #9f7427;
+
+            font-size: 11px;
+            font-weight: 900;
+        }
+
+
+        .kc-options {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 9px;
+        }
+
+
+        .kc-option {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            min-height: 48px;
+
+            padding: 10px 13px;
+
+            border: 1px solid #e5dac4;
+            border-radius: 12px;
+
+            background: #faf7f0;
+
+            color: #5c5141;
+
+            cursor: pointer;
+
+            font-size: 13px;
+        }
+
+
+        .kc-option:hover {
+            border-color: #d1b875;
+
+            background: #f7efdd;
+        }
+
+
+        .kc-option input {
+            accent-color: #b9892d;
+        }
+
+
+        .kc-finish {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+
+            min-height: 58px;
+
+            margin-top: 26px;
+
+            padding: 0 21px;
+
+            border: 1px solid #bf8e32;
+            border-radius: 15px;
+
+            background:
+                    linear-gradient(
+                            135deg,
+                            #a67821,
+                            #c99d47,
+                            #e1c06d
+                    );
+
+            color: #24190a;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+
+        .kc-result {
+            display: none;
+
+            margin-top: 27px;
+
+            padding: 30px;
+
+            border: 1px solid #ddc995;
+            border-radius: 21px;
+
+            background: #fbf5e7;
+        }
+
+
+        .kc-result.active {
+            display: block;
+        }
+
+
+        .kc-result-head {
+            display: flex;
+
+            align-items: center;
+
+            gap: 23px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .kc-grade {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 112px;
+            height: 112px;
+
+            flex-shrink: 0;
+
+            border: 6px solid #ecd9aa;
+            border-radius: 50%;
+
+            background:
+                    linear-gradient(
+                            145deg,
+                            #fffdf8,
+                            #f5e7c3
+                    );
+
+            color: #9b6f20;
+
+            font-size: 31px;
+            font-weight: 950;
+        }
+
+
+        .kc-result-head h4 {
+            margin: 0 0 7px;
+
+            color: #2d2214;
+
+            font-size: 25px;
+        }
+
+
+        .kc-result-head p {
+            color: #716654;
+
+            font-size: 14px;
+        }
+
+
+        .kc-result-stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 10px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .kc-stat {
+            padding: 14px;
+
+            border: 1px solid #e4d4af;
+            border-radius: 13px;
+
+            background: #fffaf0;
+        }
+
+
+        .kc-stat small {
+            display: block;
+
+            color: #94846b;
+
+            font-size: 10px;
+
+            text-transform: uppercase;
+        }
+
+
+        .kc-stat strong {
+            display: block;
+
+            margin-top: 4px;
+
+            color: #3e301e;
+
+            font-size: 19px;
+        }
+
+
+        .kc-repeat {
+            padding: 18px;
+
+            border: 1px solid #dfcca0;
+            border-radius: 15px;
+
+            background: #fff9ed;
+        }
+
+
+        .kc-repeat h5 {
+            margin: 0 0 11px;
+
+            color: #342719;
+
+            font-size: 14px;
+        }
+
+
+        .kc-repeat-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+
+        .kc-repeat-tag {
+            padding: 7px 10px;
+
+            border: 1px solid #e1ca93;
+            border-radius: 999px;
+
+            background: #f5e5bc;
+
+            color: #76551d;
+
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+
+        .kc-result-actions {
+            display: flex;
+
+            gap: 10px;
+
+            margin-top: 18px;
+        }
+
+
+        .kc-result-actions button {
+            min-height: 45px;
+
+            padding: 0 15px;
+
+            border-radius: 11px;
+
+            cursor: pointer;
+
+            font-family: inherit;
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+
+        .kc-retry {
+            border: 1px solid #c99c47;
+
+            background: #c99c47;
+
+            color: #251b0d;
+        }
+
+
+        .kc-back {
+            border: 1px solid #dfd1b5;
+
+            background: #fffaf1;
+
+            color: #655947;
         }
 
 
 
-        /* =====================================================
+        /* =========================================================
            RESPONSIVE
-        ====================================================== */
+        ========================================================== */
 
         @media (max-width: 920px) {
 
             .studyup-ask-wrapper {
                 grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 850px) {
+
+            .kc-head {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .kc-chapters {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .kc-options {
+                grid-template-columns: 1fr;
+            }
+
+
+            .kc-result-head {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+
+            .kc-result-stats {
+                grid-template-columns: 1fr;
+            }
+
+
+            .kc-result-actions {
+                flex-direction: column;
             }
 
         }
@@ -931,46 +1524,11 @@
             }
 
 
-            .studyup-ask-intro h2 {
-                font-size: 39px;
-
-                letter-spacing: -1.5px;
-            }
-
-
-            .studyup-dont-understand {
-                padding:
-                        20px
-                        18px
-                        20px
-                        55px;
-
-                font-size: 19px;
-            }
-
-
-            .studyup-dont-understand::before {
-                left: 15px;
-
-                font-size: 53px;
-            }
-
-
-            .studyup-question-top {
-                align-items: flex-start;
-
-                flex-direction: column;
-
-                gap: 12px;
-            }
-
-
+            .studyup-question-top,
             .studyup-question-bottom {
-                align-items: flex-start;
-
                 flex-direction: column;
 
-                gap: 3px;
+                align-items: flex-start;
             }
 
         }
@@ -1148,7 +1706,7 @@
 
 
     <!-- =========================================================
-         EXAMENE ORIGINAL
+         EXAMENE
     ========================================================== -->
 
     <section class="container exam-grid">
@@ -1162,11 +1720,9 @@
                     Disponibil acum
                 </span>
 
-
             <h2>
                 Bacalaureat
             </h2>
-
 
             <p>
                 Arhivă de teste organizată pe ani,
@@ -1174,13 +1730,11 @@
                 cu acces direct la subiect și barem.
             </p>
 
-
             <strong>
                 Deschide arhiva →
             </strong>
 
         </a>
-
 
 
         <div
@@ -1192,17 +1746,14 @@
                     În pregătire
                 </span>
 
-
             <h2>
                 Evaluare Națională
             </h2>
-
 
             <p>
                 Vom integra separat arhiva pentru Evaluarea Națională,
                 păstrând aceeași structură simplă și clară.
             </p>
-
 
             <strong>
                 Urmează să fie adăugată
@@ -1215,7 +1766,7 @@
 
 
     <!-- =========================================================
-         CUM FUNCȚIONEAZĂ ORIGINAL
+         CUM FUNCȚIONEAZĂ
     ========================================================== -->
 
     <section
@@ -1233,7 +1784,6 @@
                         Arhiva StudyUp
                     </div>
 
-
                     <h2 class="section-title">
                         Găsești testul potrivit fără să pierzi timp.
                     </h2>
@@ -1242,13 +1792,12 @@
 
 
                 <p>
-                    Nu afișăm statistici sau materii de curs pe care încă nu
-                    le oferim. Interfața este construită în jurul resurselor
-                    reale disponibile acum.
+                    Nu afișăm statistici sau materii de curs pe care
+                    încă nu le oferim. Interfața este construită
+                    în jurul resurselor reale disponibile acum.
                 </p>
 
             </div>
-
 
 
             <div class="feature-grid">
@@ -1259,11 +1808,9 @@
                         01
                     </div>
 
-
                     <h3>
                         Alegi anul
                     </h3>
-
 
                     <p>
                         Selectezi rapid anul dorit,
@@ -1273,18 +1820,15 @@
                 </article>
 
 
-
                 <article class="feature">
 
                     <div class="icon">
                         02
                     </div>
 
-
                     <h3>
                         Filtrezi materia
                     </h3>
-
 
                     <p>
                         Vezi doar testele disciplinei
@@ -1294,18 +1838,15 @@
                 </article>
 
 
-
                 <article class="feature">
 
                     <div class="icon">
                         03
                     </div>
 
-
                     <h3>
                         Deschizi subiectul și baremul
                     </h3>
-
 
                     <p>
                         Documentele sunt păstrate separat
@@ -1323,7 +1864,7 @@
 
 
     <!-- =========================================================
-         ARHIVA ORIGINALĂ
+         ARHIVA
     ========================================================== -->
 
     <section class="section">
@@ -1337,7 +1878,6 @@
                     <div class="kicker">
                         Previzualizare
                     </div>
-
 
                     <h2 class="section-title">
                         Arhiva BAC 2012–2026
@@ -1354,7 +1894,6 @@
                 </p>
 
             </div>
-
 
 
             <div class="archive-demo">
@@ -1397,7 +1936,6 @@
                 </div>
 
 
-
                 <div class="preview-row">
 
                     <div>
@@ -1407,7 +1945,6 @@
                         </strong>
 
                         <br>
-
 
                         <small>
                             Subiectele și baremele sunt grupate logic,
@@ -1436,7 +1973,6 @@
 
     <!-- =========================================================
          ÎNTREABĂ PROFESORUL
-         PALETĂ AURIE
     ========================================================== -->
 
     <section
@@ -1449,12 +1985,7 @@
             <div class="studyup-ask-wrapper">
 
 
-                <!-- =============================================
-                     PARTEA STÂNGĂ
-                ============================================== -->
-
                 <div class="studyup-ask-intro">
-
 
                     <div class="studyup-ask-label">
                         Ajutor atunci când te blochezi
@@ -1462,13 +1993,11 @@
 
 
                     <h2>
-
                         Nu înțelegi?
 
                         <span>
                                 Întreabă profesorul.
                             </span>
-
                     </h2>
 
 
@@ -1482,42 +2011,22 @@
                     </p>
 
 
-
                     <div class="studyup-dont-understand">
                         Nu înțeleg.
                     </div>
 
 
-
                     <div class="studyup-ask-benefits">
 
-
                         <div class="studyup-ask-benefit">
 
                                 <span class="studyup-ask-check">
                                     ✓
                                 </span>
 
-                            <span>
-                                    Întrebarea ajunge direct la profesor
-                                </span>
+                            Întrebarea ajunge direct la profesor
 
                         </div>
-
-
-
-                        <div class="studyup-ask-benefit">
-
-                                <span class="studyup-ask-check">
-                                    ✓
-                                </span>
-
-                            <span>
-                                    Primești o explicație clară și personalizată
-                                </span>
-
-                        </div>
-
 
 
                         <div class="studyup-ask-benefit">
@@ -1526,12 +2035,9 @@
                                     ✓
                                 </span>
 
-                            <span>
-                                    Poți atașa o fotografie sau un PDF
-                                </span>
+                            Primești o explicație clară și personalizată
 
                         </div>
-
 
 
                         <div class="studyup-ask-benefit">
@@ -1540,12 +2046,20 @@
                                     ✓
                                 </span>
 
-                            <span>
-                                    Maximum 3 întrebări pe săptămână
-                                </span>
+                            Poți atașa o fotografie sau un PDF
 
                         </div>
 
+
+                        <div class="studyup-ask-benefit">
+
+                                <span class="studyup-ask-check">
+                                    ✓
+                                </span>
+
+                            Maximum 3 întrebări pe săptămână
+
+                        </div>
 
                     </div>
 
@@ -1553,15 +2067,9 @@
 
 
 
-                <!-- =============================================
-                     PARTEA DREAPTĂ
-                ============================================== -->
-
                 <div class="studyup-question-card">
 
-
                     <div class="studyup-question-top">
-
 
                         <div class="studyup-question-status">
 
@@ -1576,9 +2084,7 @@
                             3 întrebări / săptămână
                         </div>
 
-
                     </div>
-
 
 
                     <h3>
@@ -1592,11 +2098,7 @@
                     </p>
 
 
-
                     <div class="studyup-question-form">
-
-
-                        <!-- MATERIE -->
 
                         <label for="ask-subject">
                             Materia
@@ -1633,8 +2135,6 @@
 
 
 
-                        <!-- TEST / EXERCIȚIU -->
-
                         <label for="ask-exercise">
                             Test / exercițiu
                         </label>
@@ -1648,8 +2148,6 @@
 
 
 
-                        <!-- ÎNTREBARE -->
-
                         <label for="ask-question">
                             Întrebarea ta
                         </label>
@@ -1661,9 +2159,6 @@
                                 placeholder="Ex: Nu înțeleg de ce aici se aplică formula aceasta..."
                         ></textarea>
 
-
-
-                        <!-- CONTOR -->
 
                         <div class="studyup-question-bottom">
 
@@ -1678,11 +2173,7 @@
                         </div>
 
 
-
-                        <!-- ATAȘAMENT -->
-
                         <div class="studyup-question-attachment">
-
 
                             <label class="studyup-upload-button">
 
@@ -1692,11 +2183,7 @@
                                         accept="image/*,.pdf"
                                 >
 
-                                <span>
-                                        ＋
-                                    </span>
-
-                                Atașează poză / PDF
+                                ＋ Atașează poză / PDF
 
                             </label>
 
@@ -1708,12 +2195,8 @@
                                     Niciun fișier selectat
                                 </span>
 
-
                         </div>
 
-
-
-                        <!-- BUTON -->
 
                         <button
                                 type="button"
@@ -1725,12 +2208,11 @@
                                     Trimite profesorului
                                 </span>
 
-                            <span class="studyup-question-submit-arrow">
+                            <span>
                                     →
                                 </span>
 
                         </button>
-
 
 
                         <div
@@ -1738,36 +2220,282 @@
                                 id="ask-message"
                         ></div>
 
-
                     </div>
-
 
 
                     <div class="studyup-question-note">
 
-                            <span>
-                                💡
-                            </span>
+                        💡
+
+                        <div>
+                            <strong>Sfat:</strong>
+                            spune exact ce parte a exercițiului
+                            nu ai înțeles.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VERIFICĂ-ȚI CUNOȘTINȚELE
+    ========================================================== -->
+
+    <section
+            class="kc-section"
+            id="verifica-cunostintele"
+    >
+
+        <div class="container">
+
+            <div class="kc-head">
+
+                <div class="kc-head-left">
+
+                    <div class="kc-kicker">
+                        Matematică · M1
+                    </div>
+
+
+                    <h2 class="kc-title">
+                        Verifică-ți
+                        <span>cunoștințele.</span>
+                    </h2>
+
+
+                    <p>
+                        Alege clasa și capitolul, rezolvă un test
+                        grilă de 10 întrebări și află imediat
+                        ce notă ai obține și ce noțiuni ar trebui
+                        să mai repeți.
+                    </p>
+
+                </div>
+
+
+                <div class="kc-head-info">
+
+                    <small>
+                        Evaluare rapidă
+                    </small>
+
+                    <strong>
+                        10 întrebări · notă 1–10
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="kc-class-tabs">
+
+                <button
+                        class="kc-class-tab active"
+                        data-class="9"
+                >
+                    Clasa IX
+                </button>
+
+                <button
+                        class="kc-class-tab"
+                        data-class="10"
+                >
+                    Clasa X
+                </button>
+
+                <button
+                        class="kc-class-tab"
+                        data-class="11"
+                >
+                    Clasa XI
+                </button>
+
+                <button
+                        class="kc-class-tab"
+                        data-class="12"
+                >
+                    Clasa XII
+                </button>
+
+            </div>
+
+
+            <div id="kc-chapter-area"></div>
+
+
+
+            <div
+                    class="kc-quiz-screen"
+                    id="kc-quiz-screen"
+            >
+
+                <div class="kc-quiz-top">
+
+                    <div>
+
+                        <small id="kc-quiz-class">
+                            Clasa IX
+                        </small>
+
+                        <h3 id="kc-quiz-title">
+                            Test
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                            class="kc-close"
+                            id="kc-close"
+                            type="button"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div id="kc-questions"></div>
+
+
+                <button
+                        class="kc-finish"
+                        id="kc-finish"
+                        type="button"
+                >
+
+                        <span>
+                            Finalizează testul
+                        </span>
+
+                    <span>
+                            →
+                        </span>
+
+                </button>
+
+
+
+                <div
+                        class="kc-result"
+                        id="kc-result"
+                >
+
+                    <div class="kc-result-head">
+
+                        <div
+                                class="kc-grade"
+                                id="kc-grade"
+                        >
+                            1.00
+                        </div>
 
 
                         <div>
 
-                            <strong>
-                                Sfat:
-                            </strong>
+                            <h4 id="kc-result-title">
+                                Rezultatul tău
+                            </h4>
 
-                            spune exact ce parte a exercițiului
-                            nu ai înțeles. Cu cât întrebarea este
-                            mai clară, cu atât răspunsul profesorului
-                            poate fi mai util.
+                            <p id="kc-result-message">
+                                Rezultatul testului.
+                            </p>
 
                         </div>
 
                     </div>
 
 
-                </div>
+                    <div class="kc-result-stats">
 
+                        <div class="kc-stat">
+
+                            <small>
+                                Corecte
+                            </small>
+
+                            <strong id="kc-correct">
+                                0 / 10
+                            </strong>
+
+                        </div>
+
+
+                        <div class="kc-stat">
+
+                            <small>
+                                Procent
+                            </small>
+
+                            <strong id="kc-percent">
+                                0%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="kc-stat">
+
+                            <small>
+                                Cea mai bună notă
+                            </small>
+
+                            <strong id="kc-best-result">
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="kc-repeat">
+
+                        <h5>
+                            Ce ar trebui să mai repeți
+                        </h5>
+
+
+                        <div
+                                class="kc-repeat-list"
+                                id="kc-repeat-list"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="kc-result-actions">
+
+                        <button
+                                class="kc-retry"
+                                id="kc-retry"
+                                type="button"
+                        >
+                            Reia testul
+                        </button>
+
+
+                        <button
+                                class="kc-back"
+                                id="kc-back"
+                                type="button"
+                        >
+                            Alege alt capitol
+                        </button>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -1791,10 +2519,9 @@
                     Pregătirea începe cu resursele potrivite.
                 </h2>
 
-
                 <p>
-                    Intră în arhiva StudyUp și găsește
-                    testul pe care vrei să îl lucrezi.
+                    Intră în arhiva StudyUp și găsește testul
+                    pe care vrei să îl lucrezi.
                 </p>
 
             </div>
@@ -1811,7 +2538,6 @@
 
     </section>
 
-
 </main>
 
 
@@ -1827,9 +2553,7 @@
 
     <div class="container">
 
-
         <div class="footer-grid">
-
 
             <div>
 
@@ -1851,14 +2575,13 @@
 
 
                 <p>
-                    Platformă educațională independentă
-                    pentru pregătirea examenelor naționale.
+                    Platformă educațională independentă pentru
+                    pregătirea examenelor naționale.
                     Resursele sunt organizate clar,
                     fără a modifica documentele oficiale.
                 </p>
 
             </div>
-
 
 
             <div>
@@ -1867,16 +2590,13 @@
                     Platformă
                 </h4>
 
-
                 <a href="teste-bac.html">
                     Arhivă Bac
                 </a>
 
-
                 <a href="index.html#evaluare">
                     Evaluare Națională
                 </a>
-
 
                 <a href="index.html#cum">
                     Cum funcționează
@@ -1885,23 +2605,19 @@
             </div>
 
 
-
             <div>
 
                 <h4>
                     Legal
                 </h4>
 
-
                 <a href="surse-si-drepturi.html">
                     Surse și drepturi
                 </a>
 
-
                 <a href="surse-si-drepturi.html#confidentialitate">
                     Confidențialitate
                 </a>
-
 
                 <a href="surse-si-drepturi.html#cookies">
                     Cookie-uri
@@ -1909,27 +2625,21 @@
 
             </div>
 
-
         </div>
-
 
 
         <div class="legal-note">
 
-            © 2026 StudyUp.
-
-            Drepturile asupra designului, codului,
-            identității vizuale și materialelor originale
-            StudyUp sunt rezervate.
+            © 2026 StudyUp. Drepturile asupra designului,
+            codului, identității vizuale și materialelor
+            originale StudyUp sunt rezervate.
 
             Documentele oficiale de examen rămân distincte
-            de conținutul original StudyUp;
-
-            StudyUp nu revendică drepturi exclusive asupra lor
-            și nu este afiliată Ministerului Educației.
+            de conținutul original StudyUp; StudyUp nu
+            revendică drepturi exclusive asupra lor și
+            nu este afiliată Ministerului Educației.
 
         </div>
-
 
     </div>
 
@@ -1943,46 +2653,53 @@
 
 <script>
 
-    /* =====================================================
-       MENIUL ORIGINAL
-    ====================================================== */
+    /* =========================================================
+       MENIU
+    ========================================================== */
 
-    const m =
+    const menuButton =
         document.getElementById("menu");
 
-    const n =
+    const nav =
         document.getElementById("navin");
 
 
-    if (m) {
+    if (menuButton) {
 
-        m.onclick = () =>
-            n.classList.toggle("open");
+        menuButton.onclick =
+            () => nav.classList.toggle("open");
 
     }
 
 
 
-    /* =====================================================
-       CONTOR CARACTERE
-    ====================================================== */
+    /* =========================================================
+       ÎNTREABĂ PROFESORUL
+    ========================================================== */
 
     const askQuestion =
-        document.getElementById(
-            "ask-question"
-        );
-
+        document.getElementById("ask-question");
 
     const askQuestionCount =
-        document.getElementById(
-            "ask-question-count"
-        );
+        document.getElementById("ask-question-count");
+
+    const askSubject =
+        document.getElementById("ask-subject");
+
+    const askFile =
+        document.getElementById("ask-file");
+
+    const askFileName =
+        document.getElementById("ask-file-name");
+
+    const askSubmit =
+        document.getElementById("ask-submit");
+
+    const askMessage =
+        document.getElementById("ask-message");
 
 
-    if (
-        askQuestion &&
-        askQuestionCount
-    ) {
+    if (askQuestion) {
 
         askQuestion.addEventListener(
             "input",
@@ -1998,27 +2715,7 @@
     }
 
 
-
-    /* =====================================================
-       ATAȘAMENT
-    ====================================================== */
-
-    const askFile =
-        document.getElementById(
-            "ask-file"
-        );
-
-
-    const askFileName =
-        document.getElementById(
-            "ask-file-name"
-        );
-
-
-    if (
-        askFile &&
-        askFileName
-    ) {
+    if (askFile) {
 
         askFile.addEventListener(
             "change",
@@ -2026,15 +2723,13 @@
 
                 if (
                     askFile.files &&
-                    askFile.files.length > 0
+                    askFile.files.length
                 ) {
 
                     askFileName.textContent =
                         askFile.files[0].name;
 
-                }
-
-                else {
+                } else {
 
                     askFileName.textContent =
                         "Niciun fișier selectat";
@@ -2047,46 +2742,13 @@
     }
 
 
-
-    /* =====================================================
-       VALIDARE ÎNTREBARE
-    ====================================================== */
-
-    const askSubject =
-        document.getElementById(
-            "ask-subject"
-        );
-
-
-    const askSubmit =
-        document.getElementById(
-            "ask-submit"
-        );
-
-
-    const askMessage =
-        document.getElementById(
-            "ask-message"
-        );
-
-
-    if (
-        askSubmit &&
-        askSubject &&
-        askQuestion &&
-        askMessage
-    ) {
+    if (askSubmit) {
 
         askSubmit.addEventListener(
             "click",
             function () {
 
-
-                /* Verificăm materia */
-
-                if (
-                    !askSubject.value
-                ) {
+                if (!askSubject.value) {
 
                     askMessage.textContent =
                         "Alege materia înainte de a trimite întrebarea.";
@@ -2099,17 +2761,8 @@
                 }
 
 
-
-                /* Verificăm întrebarea */
-
-                const questionText =
-                    askQuestion
-                        .value
-                        .trim();
-
-
                 if (
-                    questionText.length < 10
+                    askQuestion.value.trim().length < 10
                 ) {
 
                     askMessage.textContent =
@@ -2123,37 +2776,1326 @@
                 }
 
 
-
-                /*
-                 * MOMENTAN ESTE DOAR FRONTEND.
-                 *
-                 * URMĂTORUL PAS:
-                 *
-                 * elev autentificat
-                 *      ↓
-                 * trimite întrebare
-                 *      ↓
-                 * salvare în baza de date
-                 *      ↓
-                 * profesorul materiei o vede
-                 *      ↓
-                 * profesorul răspunde
-                 *      ↓
-                 * elevul primește răspunsul
-                 */
-
-
                 askMessage.textContent =
                     "✓ Întrebarea este pregătită pentru trimitere.";
 
                 askMessage.className =
                     "studyup-question-message success";
 
-
             }
         );
 
     }
+
+
+
+    /* =========================================================
+       TESTE
+    ========================================================== */
+
+    const quizData = {
+
+        9: [
+
+            {
+                id: "multimi-logica",
+
+                title:
+                    "Mulțimi și logică matematică",
+
+                description:
+                    "Mulțimi, operații cu mulțimi, intervale și propoziții logice.",
+
+                topics:
+                    "Mulțimi · Logică · Intervale",
+
+                questions: [
+
+                    {
+                        q: "Dacă A = {1, 2, 3} și B = {2, 3, 4}, atunci A ∩ B este:",
+                        options: [
+                            "{1, 4}",
+                            "{2, 3}",
+                            "{1, 2, 3, 4}",
+                            "{2, 4}"
+                        ],
+                        answer: 1,
+                        topic: "Intersecția mulțimilor"
+                    },
+
+                    {
+                        q: "Dacă A = {1, 2, 3} și B = {3, 4}, atunci A ∪ B este:",
+                        options: [
+                            "{3}",
+                            "{1, 2}",
+                            "{1, 2, 3, 4}",
+                            "{1, 4}"
+                        ],
+                        answer: 2,
+                        topic: "Reuniunea mulțimilor"
+                    },
+
+                    {
+                        q: "Care număr aparține intervalului (2, 5]?",
+                        options: [
+                            "2",
+                            "1",
+                            "5",
+                            "6"
+                        ],
+                        answer: 2,
+                        topic: "Intervale"
+                    },
+
+                    {
+                        q: "Negația propoziției x > 3 este:",
+                        options: [
+                            "x < 3",
+                            "x ≤ 3",
+                            "x ≥ 3",
+                            "x = 3"
+                        ],
+                        answer: 1,
+                        topic: "Logică matematică"
+                    },
+
+                    {
+                        q: "Mulțimea numerelor naturale mai mici decât 4 este:",
+                        options: [
+                            "{1,2,3,4}",
+                            "{0,1,2,3}",
+                            "{0,1,2,3,4}",
+                            "{1,2,3}"
+                        ],
+                        answer: 1,
+                        topic: "Mulțimi numerice"
+                    },
+
+                    {
+                        q: "Dacă A ⊂ B, atunci:",
+                        options: [
+                            "Orice element din A aparține lui B",
+                            "A și B nu au elemente comune",
+                            "B este mulțimea vidă",
+                            "A este obligatoriu vidă"
+                        ],
+                        answer: 0,
+                        topic: "Incluziunea mulțimilor"
+                    },
+
+                    {
+                        q: "Intervalul [−2, 3) conține:",
+                        options: [
+                            "3",
+                            "−3",
+                            "−2",
+                            "4"
+                        ],
+                        answer: 2,
+                        topic: "Intervale"
+                    },
+
+                    {
+                        q: "Mulțimea vidă se notează:",
+                        options: [
+                            "∅",
+                            "∞",
+                            "N",
+                            "R"
+                        ],
+                        answer: 0,
+                        topic: "Notații"
+                    },
+
+                    {
+                        q: "Dacă A = {1,2} și B = {2,3}, atunci A \\ B este:",
+                        options: [
+                            "{1}",
+                            "{2}",
+                            "{3}",
+                            "{1,3}"
+                        ],
+                        answer: 0,
+                        topic: "Diferența mulțimilor"
+                    },
+
+                    {
+                        q: "Propoziția «2 este număr par» este:",
+                        options: [
+                            "Falsă",
+                            "Adevărată",
+                            "Nedefinită",
+                            "Imposibilă"
+                        ],
+                        answer: 1,
+                        topic: "Propoziții logice"
+                    }
+
+                ]
+
+            },
+
+
+            {
+                id: "functia-grad-doi",
+
+                title:
+                    "Funcția de gradul al II-lea",
+
+                description:
+                    "Parabola, rădăcini, discriminant, vârf și semnul funcției.",
+
+                topics:
+                    "Parabolă · Δ · Rădăcini",
+
+                questions: [
+
+                    {
+                        q: "Pentru f(x) = x² − 4, rădăcinile sunt:",
+                        options: [
+                            "−4 și 4",
+                            "−2 și 2",
+                            "0 și 4",
+                            "2 și 4"
+                        ],
+                        answer: 1,
+                        topic: "Rădăcinile ecuației"
+                    },
+
+                    {
+                        q: "Discriminantul ecuației x² − 5x + 6 = 0 este:",
+                        options: [
+                            "1",
+                            "5",
+                            "25",
+                            "−1"
+                        ],
+                        answer: 0,
+                        topic: "Discriminant"
+                    },
+
+                    {
+                        q: "Dacă Δ < 0, ecuația are:",
+                        options: [
+                            "două soluții reale",
+                            "o soluție dublă",
+                            "nicio soluție reală",
+                            "infinit de multe soluții"
+                        ],
+                        answer: 2,
+                        topic: "Discriminant"
+                    },
+
+                    {
+                        q: "Graficul unei funcții de gradul al II-lea este:",
+                        options: [
+                            "dreaptă",
+                            "parabolă",
+                            "cerc",
+                            "hiperbolă"
+                        ],
+                        answer: 1,
+                        topic: "Grafic"
+                    },
+
+                    {
+                        q: "Pentru f(x)=x², vârful parabolei este:",
+                        options: [
+                            "(1,1)",
+                            "(0,0)",
+                            "(−1,1)",
+                            "(0,1)"
+                        ],
+                        answer: 1,
+                        topic: "Vârful parabolei"
+                    },
+
+                    {
+                        q: "Abscisa vârfului unei parabole ax²+bx+c este:",
+                        options: [
+                            "b/2a",
+                            "−b/2a",
+                            "−a/2b",
+                            "2a/b"
+                        ],
+                        answer: 1,
+                        topic: "Vârful parabolei"
+                    },
+
+                    {
+                        q: "Ecuația x² − 9 = 0 are soluțiile:",
+                        options: [
+                            "−9 și 9",
+                            "3",
+                            "−3 și 3",
+                            "0 și 9"
+                        ],
+                        answer: 2,
+                        topic: "Rădăcinile ecuației"
+                    },
+
+                    {
+                        q: "Pentru f(x)=−x², parabola are deschiderea:",
+                        options: [
+                            "în sus",
+                            "în jos",
+                            "spre dreapta",
+                            "spre stânga"
+                        ],
+                        answer: 1,
+                        topic: "Grafic"
+                    },
+
+                    {
+                        q: "Dacă a > 0, parabola are:",
+                        options: [
+                            "maxim",
+                            "minim",
+                            "nicio extremă",
+                            "doar rădăcini negative"
+                        ],
+                        answer: 1,
+                        topic: "Vârful parabolei"
+                    },
+
+                    {
+                        q: "Produsul rădăcinilor ecuației ax²+bx+c=0 este:",
+                        options: [
+                            "−b/a",
+                            "b/a",
+                            "c/a",
+                            "−c/a"
+                        ],
+                        answer: 2,
+                        topic: "Relațiile lui Viète"
+                    }
+
+                ]
+
+            }
+
+        ],
+
+
+
+        10: [
+
+            {
+                id: "numere-complexe",
+
+                title:
+                    "Numere complexe",
+
+                description:
+                    "Forma algebrică, modulul și operații cu numere complexe.",
+
+                topics:
+                    "Complexe · Modul · Operații",
+
+                questions: [
+
+                    {
+                        q: "Valoarea lui i² este:",
+                        options: ["1", "−1", "i", "−i"],
+                        answer: 1,
+                        topic: "Unitatea imaginară"
+                    },
+
+                    {
+                        q: "Pentru z=3+4i, modulul lui z este:",
+                        options: ["3", "4", "5", "7"],
+                        answer: 2,
+                        topic: "Modulul"
+                    },
+
+                    {
+                        q: "(2+i)+(3−2i) este:",
+                        options: [
+                            "5−i",
+                            "5+3i",
+                            "1−i",
+                            "6−2i"
+                        ],
+                        answer: 0,
+                        topic: "Adunarea"
+                    },
+
+                    {
+                        q: "Partea reală a lui z=5−3i este:",
+                        options: ["−3", "3", "5", "−5"],
+                        answer: 2,
+                        topic: "Forma algebrică"
+                    },
+
+                    {
+                        q: "Partea imaginară a lui z=2+7i este:",
+                        options: ["2", "7", "7i", "2i"],
+                        answer: 1,
+                        topic: "Forma algebrică"
+                    },
+
+                    {
+                        q: "Conjugatul lui 3+2i este:",
+                        options: [
+                            "−3−2i",
+                            "3−2i",
+                            "−3+2i",
+                            "2+3i"
+                        ],
+                        answer: 1,
+                        topic: "Conjugatul"
+                    },
+
+                    {
+                        q: "i⁴ este:",
+                        options: ["1", "−1", "i", "−i"],
+                        answer: 0,
+                        topic: "Puterile lui i"
+                    },
+
+                    {
+                        q: "(1+i)(1−i) este:",
+                        options: ["0", "1", "2", "2i"],
+                        answer: 2,
+                        topic: "Înmulțirea"
+                    },
+
+                    {
+                        q: "Numărul 4 poate fi scris în C astfel:",
+                        options: [
+                            "4+0i",
+                            "0+4i",
+                            "4i",
+                            "−4i"
+                        ],
+                        answer: 0,
+                        topic: "Forma algebrică"
+                    },
+
+                    {
+                        q: "|−3| este:",
+                        options: ["−3", "3", "0", "9"],
+                        answer: 1,
+                        topic: "Modulul"
+                    }
+
+                ]
+
+            }
+
+        ],
+
+
+
+        11: [
+
+            {
+                id: "derivate",
+
+                title:
+                    "Derivate",
+
+                description:
+                    "Reguli de derivare, derivate uzuale și monotonie.",
+
+                topics:
+                    "Derivate · Reguli · Monotonie",
+
+                questions: [
+
+                    {
+                        q: "Derivata lui x² este:",
+                        options: ["x", "2x", "x²", "2"],
+                        answer: 1,
+                        topic: "Derivate uzuale"
+                    },
+
+                    {
+                        q: "Derivata unei constante este:",
+                        options: ["1", "constanta", "0", "x"],
+                        answer: 2,
+                        topic: "Derivate uzuale"
+                    },
+
+                    {
+                        q: "Derivata lui x³ este:",
+                        options: ["3x²", "x²", "3x", "x³"],
+                        answer: 0,
+                        topic: "Derivate uzuale"
+                    },
+
+                    {
+                        q: "(f+g)' este:",
+                        options: [
+                            "f'g'",
+                            "f'+g'",
+                            "f−g",
+                            "f'g+fg'"
+                        ],
+                        answer: 1,
+                        topic: "Reguli de derivare"
+                    },
+
+                    {
+                        q: "Derivata lui 2x este:",
+                        options: ["x", "0", "2", "2x"],
+                        answer: 2,
+                        topic: "Derivate uzuale"
+                    },
+
+                    {
+                        q: "Dacă f'(x)>0, funcția este:",
+                        options: [
+                            "descrescătoare",
+                            "crescătoare",
+                            "constantă",
+                            "pară"
+                        ],
+                        answer: 1,
+                        topic: "Monotonie"
+                    },
+
+                    {
+                        q: "Dacă f'(x)<0, funcția este:",
+                        options: [
+                            "crescătoare",
+                            "descrescătoare",
+                            "constantă",
+                            "periodică"
+                        ],
+                        answer: 1,
+                        topic: "Monotonie"
+                    },
+
+                    {
+                        q: "Derivata lui 1/x este:",
+                        options: [
+                            "1/x²",
+                            "−1/x²",
+                            "−x²",
+                            "1"
+                        ],
+                        answer: 1,
+                        topic: "Derivate uzuale"
+                    },
+
+                    {
+                        q: "Formula produsului este:",
+                        options: [
+                            "(fg)'=f'g+fg'",
+                            "(fg)'=f'g'",
+                            "(fg)'=f+g",
+                            "(fg)'=f'+g'"
+                        ],
+                        answer: 0,
+                        topic: "Reguli de derivare"
+                    },
+
+                    {
+                        q: "Punctele unde f'(x)=0 pot fi candidate pentru:",
+                        options: [
+                            "asimpote",
+                            "extreme locale",
+                            "domeniul funcției",
+                            "intersecția cu Oy"
+                        ],
+                        answer: 1,
+                        topic: "Extreme locale"
+                    }
+
+                ]
+
+            }
+
+        ],
+
+
+
+        12: [
+
+            {
+                id: "primitive",
+
+                title:
+                    "Primitive",
+
+                description:
+                    "Primitive uzuale și regulile de bază ale calculului integral.",
+
+                topics:
+                    "Primitive · Formule · Constanta C",
+
+                questions: [
+
+                    {
+                        q: "O primitivă a lui 2x este:",
+                        options: [
+                            "x²+C",
+                            "2+C",
+                            "2x²+C",
+                            "x+C"
+                        ],
+                        answer: 0,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "O primitivă a lui 1 este:",
+                        options: [
+                            "1+C",
+                            "x+C",
+                            "x²+C",
+                            "0"
+                        ],
+                        answer: 1,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "Constanta C apare deoarece:",
+                        options: [
+                            "derivata unei constante este 0",
+                            "x este pozitiv",
+                            "integrala este negativă",
+                            "funcția este pară"
+                        ],
+                        answer: 0,
+                        topic: "Constanta de integrare"
+                    },
+
+                    {
+                        q: "O primitivă a lui x² este:",
+                        options: [
+                            "2x",
+                            "x³/3+C",
+                            "x²/2+C",
+                            "3x²+C"
+                        ],
+                        answer: 1,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "O primitivă a lui 3x² este:",
+                        options: [
+                            "x³+C",
+                            "3x³+C",
+                            "6x+C",
+                            "x²+C"
+                        ],
+                        answer: 0,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "Dacă F este primitivă pentru f, atunci:",
+                        options: [
+                            "F=f'",
+                            "F'=f",
+                            "F'=0",
+                            "F=0"
+                        ],
+                        answer: 1,
+                        topic: "Definiția primitivei"
+                    },
+
+                    {
+                        q: "O primitivă a funcției 0 este:",
+                        options: [
+                            "orice constantă",
+                            "x",
+                            "x²",
+                            "1/x"
+                        ],
+                        answer: 0,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "O primitivă a lui 4x³ este:",
+                        options: [
+                            "x⁴+C",
+                            "4x⁴+C",
+                            "12x²+C",
+                            "x³+C"
+                        ],
+                        answer: 0,
+                        topic: "Primitive uzuale"
+                    },
+
+                    {
+                        q: "Familia primitivelor diferă prin:",
+                        options: [
+                            "o constantă",
+                            "un factor x",
+                            "semn",
+                            "domeniu"
+                        ],
+                        answer: 0,
+                        topic: "Constanta de integrare"
+                    },
+
+                    {
+                        q: "Pentru a verifica o primitivă calculăm:",
+                        options: [
+                            "F+f",
+                            "F·f",
+                            "F'",
+                            "f'"
+                        ],
+                        answer: 2,
+                        topic: "Verificarea primitivei"
+                    }
+
+                ]
+
+            }
+
+        ]
+
+    };
+
+
+
+    /* =========================================================
+       SISTEM TESTE
+    ========================================================== */
+
+    const chapterArea =
+        document.getElementById("kc-chapter-area");
+
+    const quizScreen =
+        document.getElementById("kc-quiz-screen");
+
+    const questionsBox =
+        document.getElementById("kc-questions");
+
+    const quizTitle =
+        document.getElementById("kc-quiz-title");
+
+    const quizClass =
+        document.getElementById("kc-quiz-class");
+
+    const finishButton =
+        document.getElementById("kc-finish");
+
+    const resultBox =
+        document.getElementById("kc-result");
+
+
+    let currentClass = 9;
+    let currentQuiz = null;
+
+
+
+    function getBestScore(id) {
+
+        return localStorage.getItem(
+            "studyup-best-" + id
+        );
+
+    }
+
+
+
+    function saveBestScore(id, grade) {
+
+        const old =
+            parseFloat(
+                getBestScore(id)
+            );
+
+
+        if (!old || grade > old) {
+
+            localStorage.setItem(
+                "studyup-best-" + id,
+                grade.toFixed(2)
+            );
+
+        }
+
+    }
+
+
+
+    function renderChapters() {
+
+        const chapters =
+            quizData[currentClass];
+
+
+        chapterArea.innerHTML = `
+
+                <div class="kc-class-header">
+
+                    <h3>
+                        Clasa a ${currentClass}-a
+                    </h3>
+
+                    <span>
+                        ${chapters.length}
+                        ${chapters.length === 1 ? "test disponibil" : "teste disponibile"}
+                    </span>
+
+                </div>
+
+
+                <div class="kc-chapters">
+
+                    ${chapters.map(
+            (chapter, index) => {
+
+                const best =
+                    getBestScore(
+                        chapter.id
+                    );
+
+                return `
+
+                                <article class="kc-chapter-card">
+
+                                    <div class="kc-card-top">
+
+                                        <div class="kc-chapter-number">
+                                            ${String(index + 1).padStart(2, "0")}
+                                        </div>
+
+
+                                        <div class="kc-best">
+
+                                            <small>
+                                                Cea mai bună notă
+                                            </small>
+
+                                            <strong>
+                                                ${best || "—"}
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <h4>
+                                        ${chapter.title}
+                                    </h4>
+
+
+                                    <p>
+                                        ${chapter.description}
+                                    </p>
+
+
+                                    <div class="kc-card-meta">
+
+                                        <span class="kc-meta-pill">
+                                            10 întrebări
+                                        </span>
+
+                                        <span class="kc-meta-pill">
+                                            ~10 minute
+                                        </span>
+
+                                        <span class="kc-meta-pill">
+                                            ${chapter.topics}
+                                        </span>
+
+                                    </div>
+
+
+                                    <button
+                                        class="kc-start"
+                                        type="button"
+                                        data-id="${chapter.id}"
+                                    >
+
+                                        <span>
+                                            Începe testul
+                                        </span>
+
+                                        <span>
+                                            →
+                                        </span>
+
+                                    </button>
+
+                                </article>
+
+                            `;
+
+            }
+
+        ).join("")}
+
+                </div>
+
+            `;
+
+
+        document
+            .querySelectorAll(".kc-start")
+            .forEach(
+                button => {
+
+                    button.addEventListener(
+                        "click",
+                        function () {
+
+                            startQuiz(
+                                this.dataset.id
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    }
+
+
+
+    function startQuiz(id) {
+
+        currentQuiz =
+            quizData[currentClass]
+                .find(
+                    chapter =>
+                        chapter.id === id
+                );
+
+
+        if (!currentQuiz) {
+            return;
+        }
+
+
+        quizClass.textContent =
+            "Clasa a " +
+            currentClass +
+            "-a";
+
+
+        quizTitle.textContent =
+            currentQuiz.title;
+
+
+        resultBox.classList.remove(
+            "active"
+        );
+
+
+        finishButton.style.display =
+            "flex";
+
+
+        renderQuestions();
+
+
+        quizScreen.classList.add(
+            "active"
+        );
+
+
+        quizScreen.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+
+
+    function renderQuestions() {
+
+        questionsBox.innerHTML =
+            currentQuiz.questions
+                .map(
+                    (question, index) => `
+
+                            <div class="kc-question">
+
+                                <div class="kc-question-title">
+
+                                    <span class="kc-question-number">
+                                        ${index + 1}
+                                    </span>
+
+                                    <span>
+                                        ${question.q}
+                                    </span>
+
+                                </div>
+
+
+                                <div class="kc-options">
+
+                                    ${question.options.map(
+                        (option, optionIndex) => `
+
+                                            <label class="kc-option">
+
+                                                <input
+                                                    type="radio"
+                                                    name="kc-q-${index}"
+                                                    value="${optionIndex}"
+                                                >
+
+                                                <span>
+                                                    ${option}
+                                                </span>
+
+                                            </label>
+
+                                        `
+
+                    ).join("")}
+
+                                </div>
+
+                            </div>
+
+                        `
+
+                )
+                .join("");
+
+    }
+
+
+
+    function finishQuiz() {
+
+        let correct = 0;
+
+        const wrongTopics = {};
+
+
+        currentQuiz.questions.forEach(
+            (question, index) => {
+
+                const selected =
+                    document.querySelector(
+                        `input[name="kc-q-${index}"]:checked`
+                    );
+
+
+                const value =
+                    selected
+                        ? parseInt(selected.value)
+                        : -1;
+
+
+                if (
+                    value ===
+                    question.answer
+                ) {
+
+                    correct++;
+
+                } else {
+
+                    wrongTopics[
+                        question.topic
+                        ] =
+                        (
+                            wrongTopics[
+                                question.topic
+                                ] || 0
+                        ) + 1;
+
+                }
+
+            }
+        );
+
+
+        const grade =
+            Number(
+                (
+                    1 +
+                    correct * 0.9
+                ).toFixed(2)
+            );
+
+
+        const percent =
+            correct * 10;
+
+
+        saveBestScore(
+            currentQuiz.id,
+            grade
+        );
+
+
+        const best =
+            getBestScore(
+                currentQuiz.id
+            );
+
+
+        document.getElementById(
+            "kc-grade"
+        ).textContent =
+            grade.toFixed(2);
+
+
+        document.getElementById(
+            "kc-correct"
+        ).textContent =
+            correct +
+            " / 10";
+
+
+        document.getElementById(
+            "kc-percent"
+        ).textContent =
+            percent +
+            "%";
+
+
+        document.getElementById(
+            "kc-best-result"
+        ).textContent =
+            best;
+
+
+        const title =
+            document.getElementById(
+                "kc-result-title"
+            );
+
+
+        const message =
+            document.getElementById(
+                "kc-result-message"
+            );
+
+
+        if (grade >= 9) {
+
+            title.textContent =
+                "Excelent!";
+
+            message.textContent =
+                "Stăpânești foarte bine acest capitol.";
+
+        }
+
+        else if (grade >= 7) {
+
+            title.textContent =
+                "Ești pe drumul cel bun.";
+
+            message.textContent =
+                "Ai o bază bună, dar mai există câteva noțiuni de consolidat.";
+
+        }
+
+        else if (grade >= 5) {
+
+            title.textContent =
+                "Mai este de lucru.";
+
+            message.textContent =
+                "Recapitulează noțiunile indicate mai jos și încearcă din nou.";
+
+        }
+
+        else {
+
+            title.textContent =
+                "Capitolul trebuie repetat.";
+
+            message.textContent =
+                "Revino asupra noțiunilor de bază înainte de a continua.";
+
+        }
+
+
+        const repeatList =
+            document.getElementById(
+                "kc-repeat-list"
+            );
+
+
+        const topics =
+            Object.entries(
+                wrongTopics
+            )
+                .sort(
+                    (a, b) =>
+                        b[1] - a[1]
+                );
+
+
+        if (
+            topics.length === 0
+        ) {
+
+            repeatList.innerHTML = `
+
+                    <span class="kc-repeat-tag">
+                        Nu ai noțiuni restante 🎉
+                    </span>
+
+                `;
+
+        }
+
+        else {
+
+            repeatList.innerHTML =
+                topics.map(
+                    item => `
+
+                            <span class="kc-repeat-tag">
+                                ${item[0]}
+                            </span>
+
+                        `
+                ).join("");
+
+        }
+
+
+        finishButton.style.display =
+            "none";
+
+
+        resultBox.classList.add(
+            "active"
+        );
+
+
+        resultBox.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+
+        renderChapters();
+
+    }
+
+
+
+    /* =========================================================
+       TABURI CLASE
+    ========================================================== */
+
+    document
+        .querySelectorAll(
+            ".kc-class-tab"
+        )
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        document
+                            .querySelectorAll(
+                                ".kc-class-tab"
+                            )
+                            .forEach(
+                                tab =>
+                                    tab.classList.remove(
+                                        "active"
+                                    )
+                            );
+
+
+                        this.classList.add(
+                            "active"
+                        );
+
+
+                        currentClass =
+                            parseInt(
+                                this.dataset.class
+                            );
+
+
+                        quizScreen.classList.remove(
+                            "active"
+                        );
+
+
+                        renderChapters();
+
+                    }
+                );
+
+            }
+        );
+
+
+
+    finishButton.addEventListener(
+        "click",
+        finishQuiz
+    );
+
+
+    document
+        .getElementById("kc-close")
+        .addEventListener(
+            "click",
+            function () {
+
+                quizScreen.classList.remove(
+                    "active"
+                );
+
+            }
+        );
+
+
+    document
+        .getElementById("kc-retry")
+        .addEventListener(
+            "click",
+            function () {
+
+                startQuiz(
+                    currentQuiz.id
+                );
+
+            }
+        );
+
+
+    document
+        .getElementById("kc-back")
+        .addEventListener(
+            "click",
+            function () {
+
+                quizScreen.classList.remove(
+                    "active"
+                );
+
+
+                document
+                    .getElementById(
+                        "verifica-cunostintele"
+                    )
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+            }
+        );
+
+
+
+    /* PORNIRE */
+
+    renderChapters();
 
 </script>
 
