@@ -1,0 +1,4 @@
+Pachet: 03-MATEMATICA-2021-2026
+Total PDF-uri: 348
+Pe ani: {"2021": 134, "2022": 40, "2023": 40, "2024": 44, "2025": 42, "2026": 48}
+Pe materii: {"matematica": 348}
